@@ -1,28 +1,10 @@
 import webbrowser
 import random
 from pyfiglet import figlet_format
-#from tkinter import *
 from colorama import init, Fore, Back, Style
 init(autoreset=True)
 
-"""
-1-Program logic
-2-Re-factor to OOP with classes
-3-Comment 
-4-Write tests
-5-Github
-"""
-#Class Solutions
-#def game():
-#def tv():
-#def more_info():
-#def focus_present():
-
-#Class problems
-#def exam(): #ADD GAMES AND LINKS TO LOGIC  
-# def medical():
-# def social():
-
+# Url
 url1 = 'https://www.nhs.uk/mental-health/nhs-voluntary-charity-services/charity-and-voluntary-services/get-help-from-mental-health-helplines/'
 url2 = 'https://youtu.be/qvaB2d5yDf8'
 url3 = 'https://www.netflix.com/gb/'
@@ -30,10 +12,7 @@ url4 = 'https://www.xbox.com/en-gb/xbox-game-pass?&ef_id=CjwKCAjwieuGBhAsEiwA1Ly
 url5 = 'https://www.nhs.uk/live-well/exercise/'
 Nhs = 'https://www.nhs.uk/mental-health/nhs-voluntary-charity-services/charity-and-voluntary-services/get-help-from-mental-health-helplines/'
 
-
-#class Solutions:
-#    def __init__(self):
-
+# Functions
 def random_solution():
     solutions_list = [tv, game, exercise]
     random.choice(solutions_list)
@@ -110,7 +89,9 @@ def exercise():
             else: print('Please enter y or n')    
                      
 msg = 'Anxiety Solutions' 
-ascii_art = figlet_format(msg) 
+ascii_art = figlet_format(msg)
+
+# Print statements 
 print(f"{Fore.LIGHTGREEN_EX}{ascii_art}")
 print(f"Disclaimer this is NOT medical advise, if you suffering from mental health and you need help contact {Nhs}...\n")  
 print("Anxiety is the uncertanty of 'the unkown'. What could happen in the future...?\n")
@@ -118,9 +99,7 @@ print('There are two ways to get rid of anxiety. Focusing in the present and dea
 print ('The best way to figth anxiety is by facing the issues that makes you anxious, this way you grown confident if your ability to face uncertnaty\n')
 print('Following there are a few ways of focusing in the present to help you alleviate your anxiety\n')
 
-#class Problems:
-#    def __init__(self):
-
+# Function
 def find_anxiety():
     anxiety_cause = ['job interview', 'exams', 'medical test', 'social anxiety']
     guess = None
@@ -137,11 +116,35 @@ def find_anxiety():
             print('Please enter y or n')                     
         else: print('Please enter y or n')      
 
+# Calling functions
 find_anxiety()
 tv()
 game()
 exercise() 
 more_info()      
+
+
+
+    
+
+
+    
+    
+
+
+
+    
+    
+    
+    
+ 
+
+
+
+
+
+
+
 
 
 
